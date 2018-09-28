@@ -1,0 +1,16 @@
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>POINTS</th>
+		<th>USERS_COUNT</th>
+	</tr>
+<% @scores.each do |score| %>
+	<tr>
+		<td><%= score["ID"] %></td>
+		<td><%= score["NAME"] %></td>
+		<td><%= score["POINTS"] %></td>
+		<td><%= score["USERS_COUNT"] %></td>
+	</tr>
+<% end %>
+</table>
